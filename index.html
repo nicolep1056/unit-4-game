@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Adventure Time Candy Game</title>
+    <link rel="stylsheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="row title">
+        <div class="col-8 header">
+            <h1>Adventure Time Candy Game!</h1>
+        </div>
+    </div>
+    <div class="box">
+        <p>You will be given a random target number at the start of the game.</p>
+        <p>
+            You will find four Candy People of the Candy Kingdom below. By clicking on a character you will add a specific amount of points
+            to your total score.
+        </p>
+        <p>
+            You win the game by matching your total score to the target number.
+        </p>
+        <p>If your total score goes above the target number, you lose.</p>
+        <p>
+            You can learn the value of each Candy Person by clicking on them.
+        </p>
+        <p>
+            Each time the game restarts, the values of each Candy Kingdom citizen will be reset, and there will be a new random target number to reach.
+        </p>
+        <p>Use clues, math, and candy cunning to win the game!</p>
+    </div>
+    <div class="row tracker">
+        <div class="column target">
+            <h3 id="number"></h3>
+        </div>
+        <div class="column winlose">
+            <h3>Wins:
+                <span id="wins">0</span>
+            </h3>
+            <h3>Losses:
+                <span id="losses">0</span>
+            </h3>
+        </div>
+    </div>
+    <div class="candies">
+        <img id="candyCone" class="myCandy" src="assets/images/candycone.jpg" alt="candyCone">
+        <img id="candyCorn" class="myCandy" src="assets/images/candycorn.png" alt="candyCorn">
+        <img id="cupcake" class="myCandy" src="assets/images/cupcake.png" alt="cupcake">
+        <img id="peppermint" class="myCandy" src="assets/images/peppermint.png" alt="peppermint">
+    </div>
+    <div class="score">
+        <h4>Your total score is: </h4>
+    </div>
+    <div class="scoreTotal">
+        <h1 id="totalScore">0</h1>
+    </div>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>
